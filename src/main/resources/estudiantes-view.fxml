@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER"
+      spacing="12"
+      prefWidth="500"
+      prefHeight="600"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ni.edu.ni.asignacion_evaluada.EstudiantesController">
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label text="REGISTRO DE ESTUDIANTES"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="txtCarnet"
+               promptText="Carnet del estudiante"/>
+
+    <TextField fx:id="txtNombre"
+               promptText="Nombre"/>
+
+    <TextField fx:id="txtApellido"
+               promptText="Apellido"/>
+
+    <TextField fx:id="txtEdad"
+               promptText="Edad"/>
+
+    <TextField fx:id="txtCarrera"
+               promptText="Carrera"/>
+
+    <Button text="Guardar estudiante"
+            onAction="#guardarEstudiante"/>
+
+    <Button text="Limpiar"
+            onAction="#limpiarCampos"/>
+
+    <Label text="Estudiantes registrados:"
+           style="-fx-font-weight: bold;"/>
+
+    <TextArea fx:id="txtAreaEstudiantes"
+              editable="false"
+              prefHeight="250"/>
+
+</VBox>
